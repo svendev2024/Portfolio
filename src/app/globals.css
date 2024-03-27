@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+.main-panel{
+  background-image: url('./portfolio.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 919px;
+  position: relative;
+}
+.my-photo{
+  width: 500px;
+  right: 20px;
+  position: absolute;
+  top: 229px;
+  animation-name: my-photo-effect;
+  animation-duration: 3s;
+}
+@keyframes my-photo-effect {
+  from { right: -450px;}
+  to { right: 20px;}
+}
+.introduce-header{
+  width: 60%;
+  margin: auto 100px;
+  height: 350px;
+}
+.main-name {
+  font-size: 59px;
+  font-weight: 900;
+  justify-content: center;
+  display: flex;
+  color: #c98cff;
+  text-shadow: 3px 7px black;
+  animation-name: main-header-effect;
+  animation-duration: 2.5s;
+}
+.main-header {
+  font-size: 59px;
+  font-weight: 900;
+  justify-content: center;
+  display: flex;
+  color: white;
+  text-shadow: 3px 7px black;
+  animation-name: main-header-effect;
+  animation-duration: 3.5s;
+}
+@keyframes main-header-effect {
+  from { opacity: 0.1;}
+  to { opacity: 1;}
+}
+.introduction-photo {
+  width: 100%;
+  height: 78%;
+}
+.skill-photo {
+  width: 100%;
+  height: 326px;
+}
+.intro-header {
+  color: blue;
+  font-weight: 700;
+}
+.apex-site-photo {
+  
+}
