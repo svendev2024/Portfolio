@@ -130,7 +130,7 @@ export default function Home() {
               className="apex-site-photo"
             />
           </Link>
-          <Link className="apex-site p-2 w-1/5" href={"https://inplayaowners.com/admin/login"}>
+          <Link className="apex-site p-2 w-1/5" href={"https://bringoo.de/de/"}>
             <Image 
               src="/bringoo.jpg"
               alt="Example Image"
