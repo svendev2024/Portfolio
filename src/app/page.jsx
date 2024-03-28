@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Skill from "@/components/skill";
 import Link from "next/link";
+import Header from "@/components/header";
 
 export default function Home() {
   const [skills, setSkills] = useState(["Laravel", "React", "Next.js", "Node.js", "Django", "HTML", "HTML5", "Css", "Scss", 
@@ -10,6 +11,7 @@ export default function Home() {
                                         "Bootstrap", "TypeScript", "Git","MySQL", "MongoDB"])
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
+      <Header />
       <div className="main-panel flex w-full h-96">
         <div className="flex flex-col introduce-header">
           <h1 className="main-name">Kenji Imai</h1>
@@ -55,7 +57,7 @@ export default function Home() {
       <div className="flex flex-row w-full pt-20 p-8 bg-[#cdcdcd]">
         <div className="flex flex-col w-2/3">
           <div className="text-5xl flex items-center mx-auto justify-between">S  k  i  l  l  s</div>
-          <div className="flex flex-row flex-wrap gap-4 mt-2">
+          <div className="flex flex-row flex-wrap gap-4 mt-8">
           {skills.map((item, index) => (
             <Skill key={index} skill={item} />
           ))}
@@ -73,8 +75,8 @@ export default function Home() {
       </div>
       <div className="flex flex-col w-full pt-20 p-8 bg-[white]">
         <div className="text-5xl flex m-auto">My achievement</div>
-        <div className="flex flex-row gap-2">
-          <Link className="apex-site mt-12 w-" href={"https://userguest.com/demo/"}>
+        <div className="flex flex-row flex-wrap justify-center">
+          <Link className="apex-site p-2 w-1/5" href={"https://userguest.com/demo/"}>
             <Image
               src="/userguest-site.jpg"
               alt="Example Image"
@@ -83,7 +85,7 @@ export default function Home() {
               className="apex-site-photo"
             />
           </Link>
-          <Link className="apex-site mt-12 w-" href={"https://ec.apex.tokyo/en/"}>
+          <Link className="apex-site p-2 w-1/5" href={"https://ec.apex.tokyo/en/"}>
             <Image 
               src="/apex-site.jpg"
               alt="Example Image"
@@ -92,7 +94,7 @@ export default function Home() {
               className="apex-site-photo"
             />
           </Link>
-          <Link className="apex-site mt-12 w-" href={"https://moncode.life/wp-login.php"}>
+          <Link className="apex-site p-2 w-1/5" href={"https://moncode.life/wp-login.php"}>
             <Image 
               src="/moncode.jpg"
               alt="Example Image"
@@ -101,9 +103,36 @@ export default function Home() {
               className="apex-site-photo"
             />
           </Link>
-          <Link className="apex-site mt-12 w-" href={"https://inplayaowners.com/admin/login"}>
+          <Link className="apex-site p-2 w-1/5" href={"https://inplayaowners.com/admin/login"}>
             <Image 
               src="/inplayaowner.jpg"
+              alt="Example Image"
+              width={400}
+              height={100}
+              className="apex-site-photo"
+            />
+          </Link>
+          <Link className="apex-site p-2 w-1/5" href={"https://inplayaowners.com/admin/login"}>
+            <Image 
+              src="/hallvers.jpg"
+              alt="Example Image"
+              width={400}
+              height={100}
+              className="apex-site-photo"
+            />
+          </Link>
+          <Link className="apex-site p-2 w-1/5" href={"https://inplayaowners.com/admin/login"}>
+            <Image 
+              src="/finance.jpg"
+              alt="Example Image"
+              width={400}
+              height={100}
+              className="apex-site-photo"
+            />
+          </Link>
+          <Link className="apex-site p-2 w-1/5" href={"https://inplayaowners.com/admin/login"}>
+            <Image 
+              src="/bringoo.jpg"
               alt="Example Image"
               width={400}
               height={100}

@@ -92,6 +92,7 @@ body {
   color: blue;
   font-weight: 700;
 }
-.apex-site-photo {
-  
+.apex-site-photo:hover {
+  opacity: 0.6;
+  box-shadow: 6px 6px 6px black;
 }
