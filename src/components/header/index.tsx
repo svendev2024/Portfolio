@@ -2,7 +2,12 @@
 import React, { useState } from "react";
 
 import './header.css'
-export default function Header(props) {
+
+interface HeaderProps {
+  
+}
+
+export default function Header(props: HeaderProps) {
   
   return (
     <main className="flex flex-row items-center justify-between h-20 p-4 w-full">
