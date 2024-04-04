@@ -3,7 +3,7 @@ import { PersonaContext } from "@/contexts";
 import Image from "next/image";
 
 export default function Persona() {
-    const persona: Persona = useContext(PersonaContext)
+    const persona: Persona = useContext(PersonaContext);
     return (
       <div className="main-panel flex w-full h-96">
         <div className="flex flex-col introduce-header">
@@ -18,5 +18,5 @@ export default function Persona() {
           className="my-photo"
         />
       </div>
-    )
+    );
 }

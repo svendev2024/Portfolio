@@ -1,4 +1,4 @@
-import { createContext } from 'react';
+import { Context, createContext } from 'react';
 import _config from "@/app/config.json"
 
-export const PersonaContext = createContext(_config.Persona)
+export const PersonaContext: Context<Persona> = createContext(_config.Persona)

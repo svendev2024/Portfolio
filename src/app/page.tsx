@@ -7,8 +7,8 @@ import Header from "@/components/header";
 import Persona from "@/components/persona";
 
 export default function Home() {
-  const [skills, setSkills] = useState(["Laravel", "React", "Next.js", "Node.js", "Django", "HTML", "HTML5", "Css", "Scss", 
-                                        "Javascript", "jQuery", "Alpine.js", "Vue.js", "PHP", "Python", "AWS", "Workflow", 
+  const [skills, setSkills] = useState(["Laravel", "React", "Next.js", "Node.js", "Django", "HTML", "HTML5", "Css", "Scss",
+                                        "Javascript", "jQuery", "Alpine.js", "Vue.js", "PHP", "Python", "AWS", "Workflow",
                                         "Bootstrap", "TypeScript", "Git","MySQL", "MongoDB"])
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
@@ -75,7 +75,7 @@ export default function Home() {
             />
           </Link>
           <Link className="apex-site p-2 w-1/5" href={"https://ec.apex.tokyo/en/"}>
-            <Image 
+            <Image
               src="/apex-site.jpg"
               alt="Example Image"
               width={400}
@@ -84,7 +84,7 @@ export default function Home() {
             />
           </Link>
           <Link className="apex-site p-2 w-1/5" href={"https://moncode.life/wp-login.php"}>
-            <Image 
+            <Image
               src="/moncode.jpg"
               alt="Example Image"
               width={400}
@@ -93,7 +93,7 @@ export default function Home() {
             />
           </Link>
           <Link className="apex-site p-2 w-1/5" href={"https://inplayaowners.com/admin/login"}>
-            <Image 
+            <Image
               src="/inplayaowner.jpg"
               alt="Example Image"
               width={400}
@@ -102,7 +102,7 @@ export default function Home() {
             />
           </Link>
           <Link className="apex-site p-2 w-1/5" href={"https://inplayaowners.com/admin/login"}>
-            <Image 
+            <Image
               src="/hallvers.jpg"
               alt="Example Image"
               width={400}
@@ -111,7 +111,7 @@ export default function Home() {
             />
           </Link>
           <Link className="apex-site p-2 w-1/5" href={"https://inplayaowners.com/admin/login"}>
-            <Image 
+            <Image
               src="/finance.jpg"
               alt="Example Image"
               width={400}
@@ -120,7 +120,7 @@ export default function Home() {
             />
           </Link>
           <Link className="apex-site p-2 w-1/5" href={"https://bringoo.de/de/"}>
-            <Image 
+            <Image
               src="/bringoo.jpg"
               alt="Example Image"
               width={400}
