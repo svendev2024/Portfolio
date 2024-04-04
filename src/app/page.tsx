@@ -4,6 +4,7 @@ import Image from "next/image";
 import Skill from "@/components/skill";
 import Link from "next/link";
 import Header from "@/components/header";
+import Persona from "@/components/persona";
 
 export default function Home() {
   const [skills, setSkills] = useState(["Laravel", "React", "Next.js", "Node.js", "Django", "HTML", "HTML5", "Css", "Scss", 
@@ -12,19 +13,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
       <Header />
-      <div className="main-panel flex w-full h-96">
-        <div className="flex flex-col introduce-header">
-          <h1 className="main-name">Kenji Imai</h1>
-          <h1 className="main-header">Senior full stack developer</h1>
-        </div>
-        <Image
-          src="/photo.png"
-          alt="Example Image"
-          width={400}
-          height={100}
-          className="my-photo"
-        />
-      </div>
+      <Persona />
       <div className="flex flex-row w-full bg-[black] m-auto p-8 pt-16">
         <div className="flex w-1/3 m-auto">
           <Image
