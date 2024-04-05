@@ -5,6 +5,7 @@ import Skill from "@/components/skill";
 import Link from "next/link";
 import Header from "@/components/header";
 import Persona from "@/components/persona";
+import Footer from "@/components/footer";
 
 export default function Home() {
   const [skills, setSkills] = useState(["Laravel", "React", "Next.js", "Node.js", "Django", "HTML", "HTML5", "Css", "Scss",
@@ -65,71 +66,81 @@ export default function Home() {
       <div className="flex flex-col w-full pt-20 p-8 bg-[white]">
         <div className="text-5xl flex m-auto">My achievement</div>
         <div className="flex flex-row flex-wrap justify-center">
-          <Link className="apex-site p-2 w-1/5" href={"https://userguest.com/demo/"}>
+          <Link className="apex-site p-2 w-1/5 h-72" href={"https://userguest.com/demo/"}>
             <Image
               src="/userguest-site.jpg"
               alt="Example Image"
               width={400}
               height={100}
-              className="apex-site-photo"
+              className="apex-site-photo h-full"
             />
           </Link>
-          <Link className="apex-site p-2 w-1/5" href={"https://ec.apex.tokyo/en/"}>
+          <Link className="apex-site p-2 w-1/5 h-72" href={"https://ec.apex.tokyo/en/"}>
             <Image
               src="/apex-site.jpg"
               alt="Example Image"
               width={400}
               height={100}
-              className="apex-site-photo"
+              className="apex-site-photo h-full"
             />
           </Link>
-          <Link className="apex-site p-2 w-1/5" href={"https://moncode.life/wp-login.php"}>
+          <Link className="apex-site p-2 w-1/5 h-72" href={"https://moncode.life/wp-login.php"}>
             <Image
               src="/moncode.jpg"
               alt="Example Image"
               width={400}
               height={100}
-              className="apex-site-photo"
+              className="apex-site-photo h-full"
             />
           </Link>
-          <Link className="apex-site p-2 w-1/5" href={"https://inplayaowners.com/admin/login"}>
+          <Link className="apex-site p-2 w-1/5 h-72" href={"https://inplayaowners.com/admin/login"}>
             <Image
               src="/inplayaowner.jpg"
               alt="Example Image"
               width={400}
               height={100}
-              className="apex-site-photo"
+              className="apex-site-photo h-full"
             />
           </Link>
-          <Link className="apex-site p-2 w-1/5" href={"https://inplayaowners.com/admin/login"}>
+          <Link className="apex-site p-2 w-1/5 h-72" href={"https://castillofab.com/"}>
             <Image
-              src="/hallvers.jpg"
+              src="/castillofab.jpg"
               alt="Example Image"
               width={400}
               height={100}
-              className="apex-site-photo"
+              className="apex-site-photo h-full"
             />
           </Link>
-          <Link className="apex-site p-2 w-1/5" href={"https://inplayaowners.com/admin/login"}>
-            <Image
-              src="/finance.jpg"
-              alt="Example Image"
-              width={400}
-              height={100}
-              className="apex-site-photo"
-            />
-          </Link>
-          <Link className="apex-site p-2 w-1/5" href={"https://bringoo.de/de/"}>
+          <Link className="apex-site p-2 w-1/5 h-72" href={"https://bringoo.de/de/"}>
             <Image
               src="/bringoo.jpg"
               alt="Example Image"
               width={400}
               height={100}
-              className="apex-site-photo"
+              className="apex-site-photo h-full"
+            />
+          </Link>
+          <Link className="apex-site p-2 w-1/5 h-72" href={"https://www.safegenericpharmacy.net/"}>
+            <Image
+              src="/afegenericpharmacy.jpg"
+              alt="Example Image"
+              width={400}
+              height={100}
+              className="apex-site-photo h-full"
+            />
+          </Link>
+          <Link className="apex-site p-2 w-1/5 h-72" href={"https://boatsalesmalta.com/"}>
+            <Image
+              src="/boat.jpg"
+              alt="Example Image"
+              width={400}
+              height={100}
+              className="apex-site-photo h-full"
             />
           </Link>
         </div>
       </div>
+      <Footer />
     </main>
   );
 }
