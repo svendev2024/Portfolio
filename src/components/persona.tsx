@@ -1,9 +1,9 @@
-import { useContext } from "react";
-import { PersonaContext } from "@/contexts";
+import { PersonaConfig } from "@/config";
 import Image from "next/image";
+import React from "react";
 
 export default function Persona() {
-    const persona: Persona = useContext(PersonaContext);
+    const persona: Persona = PersonaConfig;
     return (
       <div className="main-panel flex w-full h-96">
         <div className="flex flex-col introduce-header">
