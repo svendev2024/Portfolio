@@ -26,6 +26,7 @@ export default function Footer() {
         <h3 className="text-white">Contact me</h3>
         <textarea rows={5} className="p-2"></textarea>
       </div>
+  
     </main>
   );
 }

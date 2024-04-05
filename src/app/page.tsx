@@ -6,11 +6,11 @@ import Link from "next/link";
 import Header from "@/components/header";
 import Persona from "@/components/persona";
 import Footer from "@/components/footer";
+import { PersonaConfig } from "@/config";
 
 export default function Home() {
-  const [skills, setSkills] = useState(["Laravel", "React", "Next.js", "Node.js", "Django", "HTML", "HTML5", "Css", "Scss",
-                                        "Javascript", "jQuery", "Alpine.js", "Vue.js", "PHP", "Python", "AWS", "Workflow",
-                                        "Bootstrap", "TypeScript", "Git","MySQL", "MongoDB"])
+  
+  const persona: Persona = PersonaConfig;
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
       <Header />
@@ -48,7 +48,7 @@ export default function Home() {
         <div className="flex flex-col w-2/3">
           <div className="text-5xl flex items-center mx-auto justify-between">S  k  i  l  l  s</div>
           <div className="flex flex-row flex-wrap gap-4 mt-8">
-          {skills.map((item, index) => (
+          {persona.Skills.map((item, index) => (
             <Skill key={index} skill={item} />
           ))}
           </div>

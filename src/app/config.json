@@ -2,6 +2,9 @@
     "Persona": {
         "Name": "Kenji Imai",
         "Tagline": "Senior full stack developer",
-        "Photo": "/photo.png"
+        "Photo": "/photo.png",
+        "Skills": ["Laravel", "React", "Next.js", "Node.js", "Django", "HTML", "HTML5", "Css", "Scss",
+        "Javascript", "jQuery", "Alpine.js", "Vue.js", "PHP", "Python", "AWS", "Workflow",
+        "Bootstrap", "TypeScript", "Git","MySQL", "MongoDB"]
     }
 }
