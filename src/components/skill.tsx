@@ -1,5 +1,6 @@
 import Image from "next/image";
 import "./component.css"
+import React from "react";
 
 export default function Skill(props) {
   return (
